@@ -15,6 +15,9 @@ use Stripe\Customer as StripeCustomer;
 use Stripe\Invoice as StripeInvoice;
 use Symfony\Component\HttpFoundation\Response;
 
+/**
+ * @mixin \Stripe\Invoice
+ */
 class Invoice implements Arrayable, Jsonable, JsonSerializable
 {
     /**
